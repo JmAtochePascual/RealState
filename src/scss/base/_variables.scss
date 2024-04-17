@@ -1,42 +1,51 @@
-// @font-face {
-//   font-family: "Roboto";
-//   font-style: normal;
-//   font-weight: 400;
-//   src: url("../../src/fonts/") format("truetype");
-// }
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../src/fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+}
 
-// @font-face {
-//   font-family: "Roboto";
-//   font-style: normal;
-//   font-weight: 600;
-//   src: url("../../src/fonts/") format("truetype");
-// }
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../src/fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
+}
 
-// @font-face {
-//   font-family: "Roboto";
-//   font-style: normal;
-//   font-weight: 700;
-//   src: url("../../src/fonts/") format("truetype");
-// }
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../src/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
 
-// @font-face {
-//   font-family: "Roboto";
-//   font-style: normal;
-//   font-weight: 900;
-//   src: url("../../src/fonts/") format("truetype");
-// }
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../src/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../src/fonts/Roboto/Roboto-Black.ttf") format("truetype");
+}
 
 // Fuentes
-$fuente_principal: '', sans-serif;
+$fuente_principal: 'Open Sans', sans-serif;
+$fuente_secundaria: 'Roboto', sans-serif;
+
 $paragraph: 400 1.4rem/1.5 $fuente_principal;
 $paragraph-tablet: 400 1.6rem/1.5 $fuente_principal;
-$title1: 900 4rem/1.2 $fuente_principal;
-$title2: 900 3.6rem/1.2 $fuente_principal;
-$title3: 900 3.2rem/1.2 $fuente_principal;
+$title1: 700 4rem/1.2 $fuente_secundaria;
+$title2: 700 3.6rem/1.2 $fuente_secundaria;
+$title3: 700 3.2rem/1.2 $fuente_secundaria;
 
 // Colores
-$primario: #e8505b;
-$secundario: #455a64;
+$primario: #3b4862;
 $negro: #000;
 $blanco: #FFFFFF;
-$grisClaro: #eceeef;
+$gris: #eeefed;
+$grisClaro: #f8f8f8;
