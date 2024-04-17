@@ -16,6 +16,7 @@ html {
 body {
     min-width: 32rem;
     font: v.$paragraph;
+    background-color: darken(v.$grisClaro, 3%);
 
     @media (min-width: 768px) {
         font: v.$paragraph-tablet;
