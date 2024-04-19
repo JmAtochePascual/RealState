@@ -16,6 +16,33 @@
   <link rel="stylesheet" href="./build/css/app.css">
 </head>
 <body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__barra">
+        <img class="header__logo" src="./build/img/logo.svg" alt="logo readl state" width="200" height="150">
 
+        <nav class="header__menu">
+          <a class="header__link" href="#">Nosotros</a>
+          <a class="header__link" href="#">Propiedades</a>
+          <a class="header__link" href="#">Blog</a>
+          <a class="header__link" href="#">Testimoniales</a>
+          <a class="header__link" href="#">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="header__content">
+        <h1 class="header__title">Encuentra tu casa de lujo al mejor precio</h1>
+        <p class="header__text">Encuentra el santuario de tus sueños, donde la vanguardia tecnológica y la elegancia en
+          diseño convergen para crear no
+          solo una casa, sino un refugio personal que anticipa y satisface cada una de tus necesidades.</p>
+        <picture>
+          <source srcset="../build/img/imagenHeader.avif" type="image/avif">
+          <source srcset="./build/img/imagenHeader.webp" type="image/webp">
+          <img class="header__img-flotante" src="./build/img/imagenHeader.jpg" alt="imagen de hogar" loading="lazy"
+            width="300" height="300">
+        </picture>
+      </div>
+    </div>
+  </header>
 </body>
 </html>
