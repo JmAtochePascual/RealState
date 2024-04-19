@@ -1,0 +1,108 @@
+@use "../base/variables" as v;
+
+.header {
+  padding-block: 2.4rem;
+  background-image: linear-gradient(to bottom, transparentize(v.$primario, .1) 0%, transparentize(v.$primario, .1) 100%), url("../img/header_bg.jpg");
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    position: relative;
+    min-height: 50rem;
+  }
+
+  @media (min-width: 1024px) {
+    min-height: 60rem;
+  }
+
+  &__barra {
+    margin-bottom: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+
+    @media (min-width: 768px) {
+      margin-bottom: 12rem;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @media (min-width: 1024px) {
+      margin-bottom: 16rem;
+    }
+  }
+
+  &__logo {
+    width: 20rem;
+    height: 5rem;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__link {
+    color: v.$blanco;
+  }
+
+  &__content {
+    color: v.$blanco;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      max-width: 40rem;
+      text-align: left;
+    }
+
+    @media (min-width: 1024px) {
+      max-width: 48rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 1.6rem;
+
+    @media (min-width: 768px) {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &__text {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__img-flotante {
+    display: none;
+
+    @media (min-width: 768px) {
+      position: absolute;
+      bottom: -8rem;
+      right: 0;
+      width: 30rem;
+      border-top-left-radius: 2rem;
+      border-bottom-left-radius: 2rem;
+      display: block;
+    }
+
+    @media (min-width: 1024px) {
+      width: 45rem;
+    }
+
+    @media (min-width: 1440px) {
+      width: 50rem;
+    }
+
+  }
+}
