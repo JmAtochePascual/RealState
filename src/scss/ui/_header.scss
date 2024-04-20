@@ -6,6 +6,14 @@
   background-position: center;
   background-size: cover;
 
+  @supports (background-image: url("../img/header_bg.webp")) {
+    background-image: url("../img/header_bg.webp");
+  }
+
+  @supports (background-image: url("../img/header_bg.avif")) {
+    background-image: url("../img/header_bg.avif");
+  }
+
   @media (min-width: 768px) {
     position: relative;
     min-height: 50rem;
