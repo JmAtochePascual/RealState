@@ -1,0 +1,45 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.footer {
+  padding-top: 4.8rem;
+  background-color: v.$primario;
+
+  &__grid {
+    margin-bottom: 1.6rem;
+    display: grid;
+    gap: 2.4rem;
+    color: v.$blanco;
+
+    @media (min-width: 768px) {
+      padding-top: 9.6rem;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4.8rem;
+    }
+  }
+
+  &__menu {
+    @media (min-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 1.6rem;
+  }
+
+  &__link-vertical {
+    align-self: flex-start;
+  }
+
+  &__img {
+    width: 25rem;
+  }
+
+  &__copyright {
+    padding-bottom: .8rem;
+    text-align: center;
+    color: v.$blanco;
+  }
+
+}
