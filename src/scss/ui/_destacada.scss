@@ -1,0 +1,81 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.destacada {
+  height: 80rem;
+  padding-block: 3.2rem;
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 50%, v.$primario 50%, v.$primario 100%), url("../img/destacada.jpg");
+  background-size: 80rem;
+  background-repeat: no-repeat;
+  background-position: 100%, center -7rem;
+
+  @supports (background-image: url("../img/destacada.webp")) {
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 50%, v.$primario 50%, v.$primario 100%), url("../img/destacada.webp");
+  }
+
+  @supports (background-image: url("../img/destacada.avif")) {
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 50%, v.$primario 50%, v.$primario 100%), url("../img/destacada.avif");
+  }
+
+  @media (min-width: 768px) {
+    height: 50rem;
+    padding-block: 8rem;
+    background-image: linear-gradient(to right, transparent 0%, transparent 50%, v.$primario 50%, v.$primario 100%), url("../img/destacada.jpg");
+    background-size: 100%, 120rem;
+    background-position: 100%, -20rem center;
+
+    @supports (background-image: url("../img/destacada.webp")) {
+      background-image: linear-gradient(to right, transparent 0%, transparent 50%, v.$primario 50%, v.$primario 100%), url("../img/destacada.webp");
+    }
+
+    @supports (background-image: url("../img/destacada.avif")) {
+      background-image: linear-gradient(to right, transparent 0%, transparent 50%, v.$primario 50%, v.$primario 100%), url("../img/destacada.avif");
+    }
+  }
+
+  &__all {
+    height: 100%;
+  }
+
+  &__grid {
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    gap: 4rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: unset;
+      gap: 8rem;
+    }
+  }
+
+  &__content {
+    grid-row: 2/3;
+    color: v.$blanco;
+
+    @media (min-width: 768px) {
+      grid-column: 2/3;
+      grid-row: unset;
+    }
+  }
+
+  &__titulo {
+    margin-bottom: 1.6rem;
+  }
+
+  &__precio {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  &__botom {
+    @include m.boton(v.$blanco, v.$primario);
+    text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      width: auto;
+    }
+  }
+}
