@@ -1,0 +1,10 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.main {
+  padding-block: 2.4rem;
+
+  @media (min-width: 768px) {
+    padding-block: 6.4rem;
+  }
+}
