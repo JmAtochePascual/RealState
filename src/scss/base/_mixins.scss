@@ -3,8 +3,8 @@
 
 @mixin boton($bgColor, $colorTexto) {
     width: 100%;
-    margin-top: 2rem;
-    padding: 1.6rem 4rem;
+    margin-top: 1.6rem;
+    padding: 1.2rem 4rem;
     border: none;
     display: inline-block;
     font-size: 1.4rem;
@@ -20,11 +20,15 @@
     }
 }
 
-@mixin titulo {
+@mixin titulo($salto: false) {
     font-weight: 400;
 
     span {
-        font-weight: 700
+        font-weight: 700;
+
+        @if($salto) {
+            display: block;
+        }
     }
 
     ::after {

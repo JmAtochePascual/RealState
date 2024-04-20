@@ -1,0 +1,111 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.testimoniales-blog {
+  padding-block: 2.4rem;
+
+  @media (min-width: 768px) {
+    padding-block: 4.8rem;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 2.4rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+
+  .testimoniales {
+
+    &__titulo {
+      @include m.titulo(true);
+      margin-bottom: 2.4rem;
+    }
+
+    &__testimonial {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.4rem;
+      background-color: v.$blanco;
+    }
+
+    &__img {
+      width: 25rem;
+    }
+
+    &__content {
+      padding: 0 1.6rem 1.6rem;
+
+      @media (min-width: 768px) {
+        padding: 0 3.2rem 3.2rem;
+      }
+
+      @media (min-width: 1440px) {
+        padding: 0 4.2rem 4.2rem;
+      }
+    }
+
+    &__nombre {
+      margin-bottom: .8rem;
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+
+    &__texto {
+      text-align: center;
+    }
+  }
+}
+
+.blog {
+
+  &__titulo {
+    @include m.titulo(true);
+    margin-bottom: 2.4rem;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 2.4rem;
+  }
+
+  &__entrada {
+    background-color: v.$blanco;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+
+  &__content {
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: .8rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: 24rem;
+    object-fit: cover;
+
+    @media (min-width: 768px) {
+      width: 30rem;
+      height: 100%;
+    }
+  }
+
+  &__boton {
+    @include m.boton(v.$primario, v.$blanco);
+
+    @media (min-width: 768px) {
+      width: auto;
+    }
+  }
+}
