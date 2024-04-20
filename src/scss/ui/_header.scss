@@ -7,11 +7,11 @@
   background-size: cover;
 
   @supports (background-image: url("../img/header_bg.webp")) {
-    background-image: url("../img/header_bg.webp");
+    background-image: linear-gradient(to bottom, transparentize(v.$primario, .1) 0%, transparentize(v.$primario, .1) 100%), url("../img/header_bg.webp");
   }
 
   @supports (background-image: url("../img/header_bg.avif")) {
-    background-image: url("../img/header_bg.avif");
+    background-image: linear-gradient(to bottom, transparentize(v.$primario, .1) 0%, transparentize(v.$primario, .1) 100%), url("../img/header_bg.avif");
   }
 
   @media (min-width: 768px) {
