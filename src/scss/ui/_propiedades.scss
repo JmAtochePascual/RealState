@@ -1,0 +1,55 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.propiedades {
+
+  &__titulo {
+    @include m.titulo;
+    margin-bottom: 2.4rem;
+
+    @media (min-width: 768px) {
+      margin-bottom: 4.8rem;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    gap: 2.4rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__propiedad {
+    $url : "../img/propiedad_";
+    @include m.suppor_bg_for($url, 6);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: v.$blanco;
+  }
+
+  &__nombre {
+    position: relative;
+    z-index: 2;
+    color: v.$blanco;
+  }
+
+  &__contenido {
+    padding: 1rem;
+
+    @media (min-width: 768px) {
+      padding: 1.6rem;
+    }
+  }
+
+  &__precio {
+    font-size: 3rem;
+  }
+
+  &__enlace {
+    @include m.boton(v.$primario, v.$blanco);
+  }
+}
