@@ -2,25 +2,86 @@
 
 
 @mixin boton($bgColor, $colorTexto) {
-    background-color: $bgColor;
-    padding: 1.5rem 4rem;
-    color: $colorTexto;
+    width: 100%;
     margin-top: 2rem;
-    font-size: 2rem;
-    font-weight: 400;
-    display: inline-block;
-    font-weight: 700;
+    padding: 1.6rem 4rem;
     border: none;
-    transition-property: background-color;
-    transition-duration: .3s;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 700;
     text-align: center;
+    color: $colorTexto;
+    background-color: $bgColor;
+    transition-duration: .3s;
+    transition-property: background-color;
 
     @media (min-width: 768px) {
-        width: auto;
+        font-size: 1.6rem;
+    }
+}
 
-        &:hover {
-            background-color: darken($bgColor, 10%);
-        }
+@mixin titulo {
+    font-weight: 400;
+
+    span {
+        font-weight: 700
     }
 
+    ::after {
+        content: '';
+        display: block;
+        height: 1rem;
+        width: 15rem;
+        margin-top: 1rem;
+        background-image: linear-gradient(to right, v.$primario 0%, v.$primario 50%, lighten(v.$primario, 20%) 50%, lighten(v.$primario, 20%) 100%);
+    }
+}
+
+@mixin suppor_bg($url) {
+
+    $url_jpg: "#{$url}.jpg";
+    $url_webp: "#{$url}.webp";
+    $url_avif: "#{$url}.avif";
+
+    background-image: url($url_jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @supports (background-image: url($url_webp)) {
+        background-image: url($url_webp);
+    }
+
+    @supports (background-image: url($url_avif)) {
+        background-image: url($url_avif);
+    }
+}
+
+@mixin suppor_bg_for($url, $fin) {
+
+    @for $i from 1 through $fin {
+
+        &:nth-child(#{$i}) .propiedades__imagen {
+            $url_jpg: "#{$url}#{$i}.jpg";
+            $url_webp: "#{$url}#{$i}.webp";
+            $url_avif: "#{$url}#{$i}.avif";
+
+            padding: 1rem;
+            aspect-ratio: 10/6;
+            display: flex;
+            align-items: flex-end;
+            background-image: linear-gradient(to bottom, transparentize(v.$negro, 1%) 0%, transparentize(v.$negro, .2%) 100%), url($url_jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            @supports (background-image: url($url_webp)) {
+                background-image: linear-gradient(to bottom, transparentize(v.$negro, 1%) 0%, transparentize(v.$negro, .2%) 100%), url($url_webp);
+            }
+
+            @supports (background-image: url($url_avif)) {
+                background-image: linear-gradient(to bottom, transparentize(v.$negro, 1%) 0%, transparentize(v.$negro, .2%) 100%), url($url_avif);
+            }
+        }
+    }
 }
