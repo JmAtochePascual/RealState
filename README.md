@@ -1,4 +1,4 @@
-# ⚡️ AirBNB Clone
+# ⚡️ ReadState
 
 Este proyecto es un sitio web diseñado para presentar propiedades de lujo en venta, facilitando a los usuarios la búsqueda y visualización de información detallada sobre cada propiedad disponible. Abarca desde casas de lujo hasta apartamentos exclusivos, proporcionando una interfaz sencilla y elegante para la interacción del usuario.
 
