@@ -4,32 +4,40 @@ ReadState es un sitio web inmobiliario especializado en propiedades de lujo. La 
 
 ## Caracteristicas
 
-- **Google Fonts**: Tipografías web optimizadas.
-- **Optimización SEO**: Metadatos y estructura optimizada para buscadores.
-- **PostCSS**: Procesamiento de CSS con plugins como Autoprefixer y CSSnano.
-- **Responsive Design**: Diseño adaptable para todos los dispositivos.
-- **Formatos de imagen modernos**: Soporte para WebP y AVIF para optimizar el rendimiento.
-- **Favicon**: Iconos personalizados para diferentes dispositivos y plataformas.
+- Tipografías web optimizadas.
+- Metadatos y estructura optimizada para buscadores.
+- Procesamiento de CSS con plugins como Autoprefixer y CSSnano.
+- Diseño adaptable para todos los dispositivos.
+- Soporte para WebP y AVIF para optimizar el rendimiento.
+- Iconos personalizados para diferentes dispositivos y plataformas.
 
 ## Tecnologías
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Gulp](https://img.shields.io/badge/GULP-%23CF4647.svg?style=for-the-badge&logo=gulp&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
-- **HTML5**: Lenguaje de marcado para la estructura de la página.
-- **CSS3**: Estilos para el diseño y presentación.
-- **SCSS/SASS**: Preprocesador CSS para una escritura más eficiente de estilos.
-- **Gulp**: Automatización de tareas como compilación de SCSS, optimización de imágenes y más.
+- **HTML:** Lenguaje de marcado para estructurar el contenido de la página.
+- **CSS:** Lenguaje de estilos utilizado para definir la presentación visual y el diseño responsivo.
+- **JavaScript:** Lenguaje de programación que permite agregar interactividad y dinamismo.
+- **Sass:** Preprocesador CSS para una escritura más eficiente de estilos.
+- **Gulp:** Automatización de tareas como compilación de SCSS, optimización de imágenes y más.
 
 ## Estructura del Proyecto
 
-- **build/css**: Carpeta que contiene los archivos CSS compilados y optimizados para producción.
-- **build/img**: Carpeta con imágenes optimizadas en formatos WebP y AVIF para mejor rendimiento web.
-- **src/scss**: Carpeta con los archivos fuente SCSS organizados en módulos y componentes.
-- **src/img**: Carpeta con las imágenes originales sin optimizar.
-- **index.html**: Página de inicio que presenta la aplicación de Delivery App y sus funcionalidades.
+- **src:** Directorio que contiene el código fuente del proyecto.
+  - **img:** Directorio que contiene las imágenes del proyecto.
+  - **fonts:** Directorio que contiene los archivos de fuentes.
+  - **scss:** Directorio que contiene los archivos de SCSS.
+  - **favicon:** Directorio que contiene los archivos del favicon.
+- **build:** Directorio que contiene los archivos optimizados para producción.
+  - **css:** Directorio que contiene los archivos de estilos optimizados.
+  - **img:** Directorio que contiene las imágenes optimizadas.
+- **index.html:** Archivo principal que contiene el código HTML del proyecto.
+- **gulpfile.js:** Archivo que contiene la configuración de Gulp.
+- **README.md:** Archivo que contiene la documentación del proyecto.
 
 ## Instalación
 
@@ -92,4 +100,4 @@ Si deseas contribuir al proyecto, por favor sigue estos pasos en orden:
 
 Este proyecto se encuentra disponible bajo la licencia MIT. Puedes consultar los términos completos [aquí](https://opensource.org/licenses/MIT).
 
-Desarrollado con 💚 por JMCode | © 2025 - Transformando ideas en soluciones digitales
+<p align="center" style="margin-top: 120px;">Desarrollado con 🤍 por JMCode | Transformando ideas en soluciones digitales</p>

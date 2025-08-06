@@ -10,16 +10,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.4.19",
-    "cssnano": "^6.1.2",
-    "gulp": "^4.0.2",
-    "gulp-avif": "^1.1.1",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-postcss": "^10.0.0",
-    "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "gulp-webp": "^4.0.1",
-    "postcss": "^8.4.38",
-    "sass": "^1.75.0"
+    "autoprefixer": "10.4.19",
+    "cssnano": "6.1.2",
+    "gulp": "4.0.2",
+    "gulp-avif": "1.1.1",
+    "gulp-imagemin": "7.1.0",
+    "gulp-postcss": "10.0.0",
+    "gulp-sass": "5.1.0",
+    "gulp-sourcemaps": "3.0.0",
+    "gulp-webp": "4.0.1",
+    "postcss": "8.4.38",
+    "sass": "1.75.0"
   }
 }
